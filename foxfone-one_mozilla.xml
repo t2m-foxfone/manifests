@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git@t2m.gitweb.com:/soul/" name="t2m" review="t2m.gitweb.com:8081"/>
+  <remote fetch="https://github.com/t2m-foxfone/" name="t2m"/>
   <default remote="t2m" revision="foxfone-one"/>
 
   <project name="kernel_lk" path="bootable/bootloader/lk"/>
