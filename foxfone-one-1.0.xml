@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="git@t2m.gitweb.com:/soul/" name="t2m" review="t2m.gitweb.com:8081"/>
+  <default remote="t2m" revision="foxfone-one"/>
+
+  <project name="quic/lf/b2g/build" path="device/qcom/b2g_common" upstream="refs/heads/master"/>
+  <project name="quic/lf/b2g/external/jsmin" path="external/jsmin"/>
+  <project name="quic/lf/b2g/mozilla-b2g/B2G" path="device/qcom/b2g_common/mozilla-b2g" upstream="refs/heads/mozilla/master"/>
+  <project name="quic/lf/b2g/mozilla-b2g/gonk-misc" path="gonk-misc"/>
+  <project name="quic/lf/b2g/mozilla-b2g/librecovery" path="librecovery"/>
+  <project name="quic/lf/b2g/mozilla-b2g/moztt" path="external/moztt"/>
+  <project name="quic/lf/b2g/mozilla/gaia" path="gaia"/>
+  <project name="quic/lf/b2g/mozilla/gecko" path="gecko"/>
+  <project groups="device,flo" name="device/asus/deb"/>
+  <project groups="device,flo" name="device/asus/flo"/>
+  <project groups="device,flo" name="device/asus/flo-kernel"/>
+  <project groups="device,grouper" name="device/asus/grouper"/>
+  <project groups="device,grouper" name="device/asus/tilapia"/>
+  <project name="device/common"/>
+  <project groups="pdk" name="device/generic/armv7-a-neon"/>
+  <project groups="pdk" name="device/generic/common"/>
+  <project groups="pdk" name="device/generic/goldfish"/>
+  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon"/>
+  <project groups="pdk" name="device/generic/mini-emulator-mips"/>
+  <project groups="pdk" name="device/generic/mini-emulator-x86"/>
+  <project groups="pdk" name="device/generic/mips"/>
+  <project groups="pdk" name="device/generic/x86"/>
+  <project groups="device" name="device/google/accessory/arduino"/>
+  <project groups="device" name="device/google/accessory/demokit"/>
+  <project groups="device,mako" name="device/lge/mako"/>
+  <project groups="device,mako" name="device/lge/mako-kernel"/>
+  <project name="device/qcom/common" upstream="b2g_jb_3.2">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="pdk" name="device/sample"/>
+  <project groups="device,tuna" name="device/samsung/maguro"/>
+  <project groups="device,manta" name="device/samsung/manta"/>
+  <project groups="device,tuna" name="device/samsung/toro"/>
+  <project groups="device,tuna" name="device/samsung/toroplus"/>
+  <project groups="device,tuna" name="device/samsung/tuna"/>
+  <project groups="device" name="device/samsung_slsi/arndale"/>
+  <project groups="device" name="device/ti/panda"/>
+  <project name="kernel/lk" path="bootable/bootloader/lk"/>
+  <project name="kernel/msm" path="kernel" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="quic/lf/b2g/releases/l10n/compare-locales" path="compare-locales" upstream="mozilla/master"/>
+  <project groups="pdk" name="platform/abi/cpp" path="abi/cpp"/>
+  <project name="platform/bionic" path="bionic" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/build" path="build" upstream="b2g_jb_3.2">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/docs/source.android.com" path="docs/source.android.com"/>
+  <project groups="pdk" name="platform/external/aac" path="external/aac"/>
+  <project name="platform/external/alljoyn/alljoyn_core" path="external/alljoyn/alljoyn_core"/>
+  <project name="platform/external/alljoyn/common" path="external/alljoyn/common"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service"/>
+  <project name="platform/external/arduino" path="external/arduino"/>
+  <project groups="pdk" name="platform/external/bison" path="external/bison"/>
+  <project name="platform/external/blktrace" path="external/blktrace"/>
+  <project name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/external/bluetooth/bluez" path="external/bluetooth/bluez" upstream="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/bluetooth/btconfig" path="external/bluetooth/btconfig"/>
+  <project name="platform/external/bluetooth/glib" path="external/bluetooth/glib" upstream="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/brctl" path="external/brctl"/>
+  <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff"/>
+  <project name="platform/external/bson" path="external/bson"/>
+  <project groups="pdk" name="platform/external/bzip2" path="external/bzip2"/>
+  <project name="platform/external/ceres-solver" path="external/ceres-solver"/>
+  <project groups="pdk" name="platform/external/checkpolicy" path="external/checkpolicy"/>
+  <project groups="pdk" name="platform/external/clang" path="external/clang"/>
+  <project name="platform/external/compat-wireless" path="external/compat-wireless"/>
+  <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
+  <project name="platform/external/connectivity" path="external/connectivity"/>
+  <project name="platform/external/crda" path="external/crda"/>
+  <project name="platform/external/curl" path="external/curl"/>
+  <project name="platform/external/dbus" path="external/dbus" upstream="b2g/jb_mr1_rb2.17"/>
+  <project name="platform/external/dhcpcd" path="external/dhcpcd"/>
+  <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq"/>
+  <project name="platform/external/dropbear" path="external/dropbear"/>
+  <project groups="pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs"/>
+  <project name="platform/external/ebtables" path="external/ebtables"/>
+  <project name="platform/external/eigen" path="external/eigen"/>
+  <project name="platform/external/elfutils" path="external/elfutils"/>
+  <project name="platform/external/embunit" path="external/embunit"/>
+  <project name="platform/external/esd" path="external/esd"/>
+  <project groups="pdk" name="platform/external/expat" path="external/expat"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm"/>
+  <project groups="pdk" name="platform/external/flac" path="external/flac"/>
+  <project groups="pdk" name="platform/external/freetype" path="external/freetype"/>
+  <project name="platform/external/fsck_msdos" path="external/fsck_msdos"/>
+  <project groups="pdk" name="platform/external/gcc-demangle" path="external/gcc-demangle"/>
+  <project name="platform/external/genext2fs" path="external/genext2fs"/>
+  <project name="platform/external/giflib" path="external/giflib"/>
+  <project name="platform/external/grub" path="external/grub"/>
+  <project groups="pdk" name="platform/external/gtest" path="external/gtest"/>
+  <project name="platform/external/harfbuzz" path="external/harfbuzz"/>
+  <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng"/>
+  <project name="platform/external/hyphenation" path="external/hyphenation"/>
+  <project groups="pdk" name="platform/external/icu4c" path="external/icu4c"/>
+  <project groups="pdk" name="platform/external/iproute2" path="external/iproute2"/>
+  <project name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
+  <project name="platform/external/iptables" path="external/iptables"/>
+  <project groups="pdk" name="platform/external/jhead" path="external/jhead"/>
+  <project groups="pdk" name="platform/external/jpeg" path="external/jpeg"/>
+  <project name="platform/external/kernel-headers" path="external/kernel-headers"/>
+  <project name="platform/external/kissfft" path="external/kissfft"/>
+  <project name="platform/external/libcap-ng" path="external/libcap-ng"/>
+  <project name="platform/external/libffi" path="external/libffi"/>
+  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm"/>
+  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf"/>
+  <project name="platform/external/libmtp" path="external/libmtp"/>
+  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
+  <project groups="nxp_nfc" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
+  <project groups="pdk" name="platform/external/libnl-headers" path="external/libnl-headers"/>
+  <project name="platform/external/libogg" path="external/libogg"/>
+  <project name="platform/external/libpcap" path="external/libpcap"/>
+  <project groups="pdk" name="platform/external/libpng" path="external/libpng"/>
+  <project name="platform/external/libppp" path="external/libppp"/>
+  <project groups="pdk" name="platform/external/libselinux" path="external/libselinux"/>
+  <project groups="pdk" name="platform/external/libsepol" path="external/libsepol"/>
+  <project name="platform/external/libusb" path="external/libusb"/>
+  <project name="platform/external/libusb-compat" path="external/libusb-compat"/>
+  <project groups="libusb_aah" name="platform/external/libusb_aah" path="external/libusb_aah"/>
+  <project name="platform/external/libvorbis" path="external/libvorbis"/>
+  <project groups="pdk" name="platform/external/libvpx" path="external/libvpx"/>
+  <project name="platform/external/libxml2" path="external/libxml2"/>
+  <project name="platform/external/libxslt" path="external/libxslt"/>
+  <project groups="libyuv" name="platform/external/libyuv" path="external/libyuv"/>
+  <project name="platform/external/linux-tools-perf" path="external/linux-tools-perf"/>
+  <project groups="pdk" name="platform/external/llvm" path="external/llvm"/>
+  <project name="platform/external/marisa-trie" path="external/marisa-trie"/>
+  <project name="platform/external/markdown" path="external/markdown"/>
+  <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder"/>
+  <project groups="pdk" name="platform/external/mksh" path="external/mksh"/>
+  <project name="platform/external/mobicore" path="external/mobicore"/>
+  <project name="platform/external/mockito" path="external/mockito"/>
+  <project name="platform/external/mtpd" path="external/mtpd"/>
+  <project name="platform/external/naver-fonts" path="external/naver-fonts"/>
+  <project name="platform/external/netcat" path="external/netcat"/>
+  <project name="platform/external/netperf" path="external/netperf"/>
+  <project name="platform/external/neven" path="external/neven"/>
+  <project name="platform/external/nist-pkits" path="external/nist-pkits"/>
+  <project name="platform/external/noto-fonts" path="external/noto-fonts"/>
+  <project name="platform/external/open-vcdiff" path="external/open-vcdiff"/>
+  <project name="platform/external/opencv" path="external/opencv"/>
+  <project name="platform/external/openfst" path="external/openfst"/>
+  <project name="platform/external/openssh" path="external/openssh"/>
+  <project groups="pdk" name="platform/external/openssl" path="external/openssl"/>
+  <project name="platform/external/oprofile" path="external/oprofile"/>
+  <project name="platform/external/ping" path="external/ping"/>
+  <project name="platform/external/ping6" path="external/ping6"/>
+  <project name="platform/external/powertop" path="external/powertop"/>
+  <project name="platform/external/ppp" path="external/ppp"/>
+  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf"/>
+  <project name="platform/external/protobuf-c" path="external/protobuf-c"/>
+  <project name="platform/external/qemu-pc-bios" path="external/qemu-pc-bios"/>
+  <project name="platform/external/qrngd" path="external/qrngd"/>
+  <project name="platform/external/regex-re2" path="external/regex-re2"/>
+  <project name="platform/external/robolectric" path="external/robolectric"/>
+  <project name="platform/external/rp-pppoe" path="external/rp-pppoe"/>
+  <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop"/>
+  <project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy"/>
+  <project name="platform/external/skia" path="external/skia"/>
+  <project name="platform/external/smack" path="external/smack"/>
+  <project groups="pdk" name="platform/external/sonivox" path="external/sonivox"/>
+  <project groups="pdk" name="platform/external/speex" path="external/speex"/>
+  <project groups="pdk" name="platform/external/sqlite" path="external/sqlite"/>
+  <project name="platform/external/srec" path="external/srec"/>
+  <project name="platform/external/srtp" path="external/srtp"/>
+  <project groups="pdk" name="platform/external/stlport" path="external/stlport"/>
+  <project name="platform/external/strace" path="external/strace"/>
+  <project name="platform/external/stressapptest" path="external/stressapptest"/>
+  <project name="platform/external/svox" path="external/svox"/>
+  <project name="platform/external/tcpdump" path="external/tcpdump"/>
+  <project name="platform/external/timezonepicker-support" path="external/timezonepicker-support"/>
+  <project groups="pdk" name="platform/external/tinyalsa" path="external/tinyalsa"/>
+  <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml"/>
+  <project groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2"/>
+  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo"/>
+  <project name="platform/external/v8" path="external/v8"/>
+  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind"/>
+  <project name="platform/external/webp" path="external/webp"/>
+  <project groups="pdk" name="platform/external/webrtc" path="external/webrtc"/>
+  <project groups="pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
+  <project groups="pdk" name="platform/external/yaffs2" path="external/yaffs2"/>
+  <project groups="pdk" name="platform/external/zlib" path="external/zlib"/>
+  <project name="platform/frameworks/av" path="frameworks/av" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/frameworks/base" path="frameworks/base" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc"/>
+  <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker"/>
+  <project name="platform/frameworks/native" path="frameworks/native" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
+  <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs"/>
+  <project name="platform/frameworks/webview" path="frameworks/webview"/>
+  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm"/>
+  <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt"/>
+  <project groups="broadcom_wlan" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
+  <project groups="invensense" name="platform/hardware/invensense" path="hardware/invensense"/>
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
+  <project name="platform/hardware/msm7k" path="hardware/msm7k"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="qcom,default" name="platform/hardware/qcom/gps" path="hardware/qcom/gps"/>
+  <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
+  <project groups="qcom_wlan,default" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
+  <project name="platform/hardware/ril" path="hardware/ril" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="exynos5" name="platform/hardware/samsung_slsi/exynos5" path="hardware/samsung_slsi/exynos5"/>
+  <project name="platform/hardware/ti/omap3" path="hardware/ti/omap3"/>
+  <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx"/>
+  <project name="platform/hardware/ti/wlan" path="hardware/ti/wlan"/>
+  <project name="platform/hardware/ti/wpan" path="hardware/ti/wpan"/>
+  <project name="platform/libcore" path="libcore"/>
+  <project groups="pdk-java" name="platform/libnativehelper" path="libnativehelper"/>
+  <project name="platform/ndk" path="ndk"/>
+  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
+  <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/3.1" path="prebuilts/clang/linux-x86/3.1"/>
+  <project name="platform/prebuilts/devtools" path="prebuilts/devtools"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6"/>
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7"/>
+  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"/>
+  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6"/>
+  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7"/>
+  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6"/>
+  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6"/>
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6"/>
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6"/>
+  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6"/>
+  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7" path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.7"/>
+  <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6"/>
+  <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7"/>
+  <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc"/>
+  <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
+  <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
+  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
+  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools"/>
+  <project name="platform/system/bluetooth" path="system/bluetooth" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/system/core" path="system/core" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project groups="pdk" name="platform/system/extras" path="system/extras"/>
+  <project groups="pdk" name="platform/system/media" path="system/media"/>
+  <project name="platform/system/netd" path="system/netd" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/system/qcom" path="system/qcom"/>
+  <project groups="pdk" name="platform/system/security" path="system/security"/>
+  <project groups="pdk" name="platform/system/vold" path="system/vold"/>
+  <project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location"/>
+  <project name="platform/vendor/qcom-opensource/stm-log" path="vendor/qcom/opensource/stm-log"/>
+  <project name="platform/vendor/qcom-opensource/testframework" path="vendor/qcom/opensource/testframework"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
+  <project name="platform/vendor/qcom-opensource/v8" path="vendor/qcom/opensource/v8"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
+  <project name="platform/vendor/qcom/copper" path="device/qcom/msm8974" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom/mpq8064" path="device/qcom/mpq8064"/>
+  <project name="platform/vendor/qcom/msm7627a" path="device/qcom/msm7627a"/>
+  <project name="platform/vendor/qcom/msm7630_surf" path="device/qcom/msm7630_surf"/>
+  <project name="platform/vendor/qcom/msm8226" path="device/qcom/msm8226" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom/msm8610" path="device/qcom/msm8610" upstream="b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom/msm8660_surf" path="device/qcom/msm8660_surf"/>
+  <project name="platform/vendor/qcom/msm8960" path="device/qcom/msm8960"/>
+  <project name="platform/vendor/qcom/zinc" path="device/qcom/apq8084"/>
+  <project name="quic/lf/b2g/releases/l10n/cs/gaia" path="gaia-l10n/cs" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/cs/gecko" path="gecko-l10n/cs" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/de/gaia" path="gaia-l10n/de" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/de/gecko" path="gecko-l10n/de" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/el/gaia" path="gaia-l10n/el" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/el/gecko" path="gecko-l10n/el" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/en-US/gaia" path="gaia-l10n/en-US" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/es-ES/gecko" path="gecko-l10n/es-ES" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/es/gaia" path="gaia-l10n/es" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/hr/gaia" path="gaia-l10n/hr" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/hr/gecko" path="gecko-l10n/hr" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/hu/gaia" path="gaia-l10n/hu" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/hu/gecko" path="gecko-l10n/hu" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/it/gaia" path="gaia-l10n/it" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/pl/gaia" path="gaia-l10n/pl" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/pl/gecko" path="gecko-l10n/pl" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/pt-BR/gaia" path="gaia-l10n/pt-BR" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/pt-BR/gecko" path="gecko-l10n/pt-BR" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/ro/gaia" path="gaia-l10n/ro" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/ro/gecko" path="gecko-l10n/ro" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/sk/gaia" path="gaia-l10n/sk" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/sk/gecko" path="gecko-l10n/sk" upstream="mozilla/mozilla-beta"/>
+  <project name="quic/lf/b2g/releases/l10n/sr-Cyrl/gaia" path="gaia-l10n/sr-Cyrl" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/sr-Latn/gaia" path="gaia-l10n/sr-Latn" upstream="mozilla/master"/>
+  <project name="quic/lf/b2g/releases/l10n/sr/gecko" path="gecko-l10n/sr" upstream="mozilla/mozilla-beta"/>
+  <project name="platform/vendor/qcom-proprietary/b2g_common" path="vendor/qcom/proprietary/b2g_common" upstream="CDR003/project/b2g_jb_3.2/master"/>
+  <project name="platform/vendor/qcom-proprietary/b2g_location" path="vendor/qcom/proprietary/b2g_location" upstream="CDR003/project/b2g_jb_3.2/master"/>
+  <project name="platform/vendor/qcom-proprietary/bt/dun" path="vendor/qcom/proprietary/bt/dun" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/bt/sap" path="vendor/qcom/proprietary/bt/sap" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/fm" path="vendor/qcom/proprietary/fm" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/grease/utilities" path="vendor/qcom/proprietary/grease/utilities" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/kernel-tests" path="vendor/qcom/proprietary/kernel-tests" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ks" path="vendor/qcom/proprietary/ks" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/llvm-rs" path="vendor/qcom/proprietary/llvm-rs" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mdm-helper" path="vendor/qcom/proprietary/mdm-helper" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-camera" path="vendor/qcom/proprietary/mm-camera" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-color-conversion" path="vendor/qcom/proprietary/mm-color-conversion" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-mux" path="vendor/qcom/proprietary/mm-mux" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-ra" path="vendor/qcom/proprietary/mm-ra" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-rtp" path="vendor/qcom/proprietary/mm-rtp" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/mm-still" path="vendor/qcom/proprietary/mm-still" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/modem-apis/msm8226" path="vendor/qcom/proprietary/modem-apis/msm8226" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/modem-apis/msm8610" path="vendor/qcom/proprietary/modem-apis/msm8610" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/modem-apis/msm8974" path="vendor/qcom/proprietary/modem-apis/msm8974" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/oem-services" path="vendor/qcom/proprietary/oem-services" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/qcNvItems" path="vendor/qcom/proprietary/qcNvItems" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/remotefs" path="vendor/qcom/proprietary/remotefs" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/rfs_access" path="vendor/qcom/proprietary/rfs_access" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/bt/hci_qcomm_init" path="vendor/qcom/proprietary/bt/hci_qcomm_init" upstream="CDR003/project/b2g_jb_3.2.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom-proprietary/ship/common" path="vendor/qcom/proprietary/common" upstream="CDR003/project/b2g_jb_3.2/b2g_jb_3.2">
+    <copyfile dest="vendor/qcom/proprietary/vendorsetup.sh" src="vendorsetup.sh"/>
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom-proprietary/ship/data" path="vendor/qcom/proprietary/data" upstream="CDR003/project/b2g_jb_3.2/b2g_jb_3.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom-proprietary/ship/diag" path="vendor/qcom/proprietary/diag" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/fastcv" path="vendor/qcom/proprietary/fastcv" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/ftm" path="vendor/qcom/proprietary/ftm" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/gps" path="vendor/qcom/proprietary/gps" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/graphics-daemons" path="vendor/qcom/proprietary/graphics-daemons" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-audio" path="vendor/qcom/proprietary/mm-audio" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-core" path="vendor/qcom/proprietary/mm-core" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-http" path="vendor/qcom/proprietary/mm-http" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-osal" path="vendor/qcom/proprietary/mm-osal" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-parser" path="vendor/qcom/proprietary/mm-parser" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mm-qsm" path="vendor/qcom/proprietary/mm-qsm" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/mp-decision" path="vendor/qcom/proprietary/mpdecision" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/oncrpc" path="vendor/qcom/proprietary/oncrpc" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/qcril" path="vendor/qcom/proprietary/qcril" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/qmi" path="vendor/qcom/proprietary/qmi" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/qmi-framework" path="vendor/qcom/proprietary/qmi-framework" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/sensors" path="vendor/qcom/proprietary/sensors" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/time-services" path="vendor/qcom/proprietary/time-services" upstream="CDR003/project/b2g_jb_3.2.2">
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform/vendor/qcom-proprietary/ship/wlan/ath6kl-utils" path="vendor/qcom/proprietary/wlan/ath6kl-utils" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/wlan/utils" path="vendor/qcom/proprietary/wlan/utils" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ship/xmllib" path="vendor/qcom/proprietary/xmllib" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ss-restart" path="vendor/qcom/proprietary/ss-restart" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/thermal" path="vendor/qcom/proprietary/thermal" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/thermal-engine" path="vendor/qcom/proprietary/thermal-engine" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/ts_firmware" path="vendor/qcom/proprietary/ts_firmware" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/wfd" path="vendor/qcom/proprietary/wfd" upstream="CDR003/project/b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom-proprietary/b2g_telephony" path="vendor/qcom/proprietary/b2g_telephony" upstream="CDR003/project/b2g_jb_3.2/master"/>
+  <project name="platform/vendor/qcom-proprietary/ffbm-diag-handler" path="vendor/qcom/proprietary/qcom-system-daemon" upstream="CDR003/project/b2g_jb_3.2"/>
+  <!-- foxfone-one specified -->
+  <project name="platform/vendor/jrdcom-version" path="vendor/jrdcom-version"/>
+  <project groups="soul-3.5-ff,default" name="platform/vendor/jrdcom" path="vendor/jrdcom"/>
+  <project groups="soul-3.5-ff,default" name="platform/vendor/qcom-proprietary/prebuilt_HY11" path="vendor/qcom/proprietary/prebuilt_HY11"/>
+  <project groups="soul-3.5-ff,default" name="platform/vendor/qcom/amss_8610" path="amss_8610"/>
+  <project groups="soul-3.5-ff,default" name="platform/hardware/nxp" path="system/nfcd"/>
+  <project groups="soul-3.5-ff,default" name="integration">
+    <copyfile dest="amss_8610/Android.mk" src="misc/empty.mk"/>
+  </project>
+</manifest>
