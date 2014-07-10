@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/t2m-foxfone/" name="t2m"/>
+  <default remote="t2m" revision="foxfone-one-v1.4"/>
+
+  <project name="quic_lf_b2g_mozilla_gaia" path="gaia"/>
+  <project name="quic_lf_b2g_mozilla_gecko" path="gecko"/>
+</manifest>
