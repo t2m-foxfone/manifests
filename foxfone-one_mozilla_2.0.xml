@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/t2m-foxfone/" name="t2m"/>
+  <default remote="t2m" revision="foxfone-one-v2.0"/>
+
+  <project name="kernel_lk" path="bootable/bootloader/lk"/>
+  <project name="platform_bootable_recovery" path="bootable/recovery" upstream="b2g_jb_3.2"/>
+  <project name="platform_build" path="build" upstream="b2g_jb_3.2">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <annotation name="tracking" value="quic/jb_3.2"/>
+  </project>
+  <project name="platform_vendor_qcom_msm8226" path="device/qcom/msm8226" upstream="b2g_jb_3.2"/>
+  <project name="platform_vendor_qcom_msm8610" path="device/qcom/msm8610" upstream="b2g_jb_3.2"/>
+  <project name="platform_vendor_qcom_copper" path="device/qcom/msm8974" upstream="b2g_jb_3.2"/>
+  <project name="platform_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" upstream="b2g_jb_3.2"/>
+  <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc"/>
+  <project groups="pdk" name="platform_external_libnfc-nci" path="external/libnfc-nci"/>
+  <project name="platform_frameworks_av" path="frameworks/av" upstream="b2g_jb_3.2"/>
+  <project name="platform_frameworks_base" path="frameworks/base" upstream="b2g_jb_3.2"/>
+  <project name="platform_frameworks_native" path="frameworks/native" upstream="b2g_jb_3.2"/>
+  <project name="quic_lf_b2g_mozilla_gaia" path="gaia"/>
+  <project name="quic_lf_b2g_mozilla_gecko" path="gecko"/>
+  <project name="quic_lf_b2g_mozilla-b2g_gonk-misc" path="gonk-misc"/>
+  <project groups="qcom,default" name="platform_hardware_qcom/camera" path="hardware/qcom/camera"/>
+  <project groups="qcom,default" name="platform_hardware_qcom_display" path="hardware/qcom/display" upstream="b2g_jb_3.2"/>
+  <project groups="qcom,default" name="platform_hardware_qcom_sensors" path="hardware/qcom/sensors"/>
+  <project name="kernel_msm" path="kernel" upstream="b2g_jb_3.2"/>
+  <project name="platform_system_core" path="system/core" upstream="b2g_jb_3.2"/>
+</manifest>
