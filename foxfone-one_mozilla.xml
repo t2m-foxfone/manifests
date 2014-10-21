@@ -9,6 +9,7 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
     <annotation name="tracking" value="quic/jb_3.2"/>
   </project>
+  <project name="device_qcom_common" path="device/qcom/common"/>
   <project name="platform_vendor_qcom_msm8226" path="device/qcom/msm8226" upstream="b2g_jb_3.2"/>
   <project name="platform_vendor_qcom_msm8610" path="device/qcom/msm8610" upstream="b2g_jb_3.2"/>
   <project name="platform_vendor_qcom_copper" path="device/qcom/msm8974" upstream="b2g_jb_3.2"/>
